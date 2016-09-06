@@ -1,0 +1,33 @@
+---
+title: "Challenges"
+author: "Antoine Vernet"
+date: ''
+output:
+  pdf_document: default
+  html_document: default
+subtitle: Week 1
+---
+
+## Challenge 1: The one with the pull request
+
+Fork the [github repository](https://github.com/antoinevernet/BA1820) for the class.
+
+Improve an existing slide in session 1 or session 2, or design a new slide that expand the current slide deck.
+
+Edit the readme to add your name in the contributors section with your cohort name (Business Analytics 1617)
+
+Write a pull request.
+
+If your pull request is accepted (I might require some changes first), you win.
+
+
+
+## Challenge 2: The one with the dice
+
+
+Write a function that calculate probabilities for an arbitrary number of fair 6-sided dice.
+
+Can you modify the function so it calculate probability for a fair dice with an arbitrary number of faces?
+
+Simulate rolling a dice 1000 times to test whether your function produces the right results.
+
