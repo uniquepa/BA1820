@@ -537,7 +537,7 @@ A simple linear function: $f(x) = ax + b$
 ```{r, out.width = '60%', fig.retina = NULL, fig.align = "center"}
 library(ggplot2)
 data <- data.frame(x = 1:10, fx = rep(5, 10))
-ggplot(data, aes(x = x, y = fx)) + geom_line() + geom_bar(stat="identity", colour="#FF9999") 
+ggplot(data, aes(x = x, y = fx)) + geom_line(colour="#FF3465")
 ```
 
 ## $f(x) = ax + b$
@@ -546,7 +546,7 @@ ggplot(data, aes(x = x, y = fx)) + geom_line() + geom_bar(stat="identity", colou
 x <- 1:10
 fx <-  5 * x + 2
 data <- data.frame(x = x, fx = fx)
-ggplot(data, aes(x = x, y = fx)) + geom_line() + geom_bar(stat="identity", colour="#FF3465") 
+ggplot(data, aes(x = x, y = fx)) + geom_line(colour="#FF3465")
 ```
 
 ## $f(x) = a x^2 + b$
@@ -555,7 +555,7 @@ ggplot(data, aes(x = x, y = fx)) + geom_line() + geom_bar(stat="identity", colou
 x <- 1:10
 fx <-  2 * x ^ 2 - 10
 data <- data.frame(x = x, fx = fx)
-ggplot(data, aes(x = x, y = fx)) + geom_line(colour="#FF1054") + geom_bar(stat="identity", colour="#FF1278") 
+ggplot(data, aes(x = x, y = fx)) + geom_line(colour="#FF3465")
 ```
 
 
@@ -612,7 +612,7 @@ ggplot(data = cd, aes(x = x)) +
 library(reshape2)
 cd2 <- melt(cd, id.vars = "x")
 ggplot(data = cd2, aes(x = x, y = value, linetype = variable)) + 
-       geom_line(size = 2,colour="#FF7609")
+       geom_line(size = 2,colour="#FF1789")
 ```
 
 ## Hessian
