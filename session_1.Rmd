@@ -603,7 +603,8 @@ cd <- data.frame(x = seq(0, 10, by = 0.01),
                  cos_prime = as.numeric(attr(cos_deriv(seq(0, 10, by = 0.01)),
                                              "gradient")))
 ggplot(data = cd, aes(x = x)) + 
-       geom_line(aes(y = cos),color="#FF3489") + geom_line(aes(y = cos_prime),color="#FF7645")
+       geom_line(aes(y = cos),color="#FF3489") + 
+       geom_line(aes(y = cos_prime),color="#FF7645")
 ```
 
 ## Derivatives in R (4): a better graph
@@ -611,8 +612,7 @@ ggplot(data = cd, aes(x = x)) +
 ```{r, fig.align = "center", out.width = "60%"}
 library(reshape2)
 cd2 <- melt(cd, id.vars = "x")
-ggplot(data = cd2, aes(x = x, y = value, linetype = variable)) + 
-       geom_line(size = 2,colour="#FF1789")
+ggplot(data = cd2, aes(x = x, y = value, linetype = variable)) +         geom_line(size = 2,colour="#FF1789")
 ```
 
 ## Hessian
