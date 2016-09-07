@@ -3,10 +3,10 @@ title: "Session 1"
 author: "Antoine Vernet"
 subtitle: Statistics and Programming with R
 output:
-  beamer_presentation:
-    slide_level: 2
   ioslides_presentation:
     css: style.css
+  beamer_presentation:
+    slide_level: 2
 ---
 
 ```{r setup, echo = FALSE}
@@ -483,7 +483,7 @@ When $f'(x) = 0$, $f(x)$ is a critical point:
 
 For multivariate function, such as $f(x, y)$, a partial derivative is the derivative of this function with respect to one variable, with others held constant. It is usually noted $f'_x(x, y)$ (another common notation is $\frac{\partial f}{\partial x}$).
 
-```{r, echo = FALSE, out.width = '70%', fig.retina = NULL, fig.align = 'center'}
+```{r, echo = FALSE, out.width = '50%', fig.retina = NULL, fig.align = 'center'}
 knitr::include_graphics("./img/Partial_func_eg.png")
 ```
 
@@ -534,7 +534,7 @@ A simple linear function: $f(x) = ax + b$
 
 ## $f(x) = a$
 
-```{r, out.width = '70%', fig.retina = NULL, fig.align = "center"}
+```{r, out.width = '60%', fig.retina = NULL, fig.align = "center"}
 library(ggplot2)
 data <- data.frame(x = 1:10, fx = rep(5, 10))
 ggplot(data, aes(x = x, y = fx)) + geom_line()
@@ -542,7 +542,7 @@ ggplot(data, aes(x = x, y = fx)) + geom_line()
 
 ## $f(x) = ax + b$
 
-```{r, out.width = '70%', fig.retina = NULL, fig.align = "center"}
+```{r, out.width = '60%', fig.retina = NULL, fig.align = "center"}
 x <- 1:10
 fx <-  5 * x + 2
 data <- data.frame(x = x, fx = fx)
@@ -551,7 +551,7 @@ ggplot(data, aes(x = x, y = fx)) + geom_line()
 
 ## $f(x) = a x^2 + b$
 
-```{r, out.width = '70%', fig.retina = NULL, fig.align = "center"}
+```{r, out.width = '60%', fig.retina = NULL, fig.align = "center"}
 x <- 1:10
 fx <-  2 * x ^ 2 - 10
 data <- data.frame(x = x, fx = fx)
@@ -561,7 +561,7 @@ ggplot(data, aes(x = x, y = fx)) + geom_line()
 
 ## Multivariate functions 
 
-```{r, out.width = '70%', fig.retina = NULL, fig.align = "center"}
+```{r, out.width = '60%', fig.retina = NULL, fig.align = "center"}
 x <- 1:35; y <- 5:35
 x_seq <- seq(min(x), max(x), length.out = 40)
 y_seq <- seq(min(y), max(y), length.out = 40)
@@ -572,7 +572,7 @@ persp(x = x_seq, y = y_seq, z = fx, theta = -30, phi = 30,
 
 ## RGL
 
-```{r, webgl = TRUE}
+```{r, webgl = TRUE, fig.align = "center"}
 #library(rgl)
 f <- function(x, y){ x ^ 2 - 5 * y + 3}
 persp3d(f)
@@ -597,7 +597,7 @@ cos_deriv(1:5)
 
 ## Derivatives in R (3)
 
-```{r, fig.align = "center", out.width = "70%"}
+```{r, fig.align = "center", out.width = "60%"}
 cd <- data.frame(x = seq(0, 10, by = 0.01), 
                  cos = as.numeric(cos_deriv(seq(0, 10, by = 0.01))), 
                  cos_prime = as.numeric(attr(cos_deriv(seq(0, 10, by = 0.01)),
@@ -608,7 +608,7 @@ ggplot(data = cd, aes(x = x)) +
 
 ## Derivatives in R (4): a better graph
 
-```{r, fig.align = "center", out.width = "70%"}
+```{r, fig.align = "center", out.width = "60%"}
 library(reshape2)
 cd2 <- melt(cd, id.vars = "x")
 ggplot(data = cd2, aes(x = x, y = value, linetype = variable)) + 
