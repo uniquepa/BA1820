@@ -5,6 +5,7 @@ This repository contains the material for the Statistics for Business Analytics 
 
 ## Credits
 
+
 The gif of derivative was contributed by IkamusumeFan, wikipedia.org/wiki/File:Derivative_Gif.gif
 
 The graph for the partial derivative was contributed by IkamusumeFan,
