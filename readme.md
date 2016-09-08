@@ -36,4 +36,6 @@ The RStudio logo is © 2016 RStudio, https://www.rstudio.com/
 
 The MRO logo is © 2016 Microsoft R, https://mran.revolutionanalytics.com/open/
 
+## Contributors
+
 Steven Locorotondo 8-) Business Analytics 1617
