@@ -4,6 +4,7 @@
 This repository contains the material for the Statistics for Business Analytics class in the MSc Business Analytics at Imperial College Business School.
 
 ## Credits
+## Comment
 
 
 The gif of derivative was contributed by IkamusumeFan, wikipedia.org/wiki/File:Derivative_Gif.gif
